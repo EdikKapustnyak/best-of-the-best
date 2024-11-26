@@ -1,22 +1,54 @@
 .callback {
+    padding: 0;
+    margin: 0;
 }
+
 .callback-container {
+    margin: 0;
 }
+
 .container {
+    margin: 0;
 }
+
 .callback-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .callback-img {
+    min-width: 320px;
+    min-height: 220px;
+    max-width: 680px;
+    max-height: 460px;
+    margin: 0;
 }
 .callback-request {
+
 }
+
 .callback-text {
+    font-weight: 300;
+    font-size: 1.5;
+    line-height: 48px;
 }
+
 .callback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 .callback-label {
 }
 .callback-input {
+    min-width: 260px;
+    width: 620px;
+    height: 40px ;
+    margin: 30px;
 }
+
 .callback-button {
 }
