@@ -5,8 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/best-of-the-best/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
     <script type="module" crossorigin src="/best-of-the-best/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/best-of-the-best/assets/index-DPopfxR5.css">
+    <link rel="stylesheet" crossorigin href="/best-of-the-best/assets/index-CJfcEpf5.css">
   </head>
   <body>
     <header class="header">
@@ -56,8 +60,52 @@
     <p>Team</p>
 </section>
       <section class="callback">
-    <p>callback</p>
+  <div class="callback-container container">
+    <div class="callback-wrapper">
+      <div class="callback-img">
+        <picture>
+          <source
+            media="(min-width: 320px)"
+            srcset="../img/callback/callback@1x-phone.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/callback/callback@1x-laptop.jpg"
+          />
+          <source
+            media="(min-width: 1360px)"
+            srcset="../img/callback/callback@1x-desktop.jpg"
+          />
+          <img src="../img/callback/callback@1x-phone.jpg" alt="callback" />
+        </picture>
+      </div>
+      <div class="callback-request">
+        <p class="callback-text">Request Callback</p>
+        <form class="callback-form">
+          <label class="callback-label" for="user-name"></label>
+          <input
+            class="callback-input"
+            type="text"
+            id="user-name"
+            placeholder="Enter your name"
+            required
+          />
+          <label class="callback-label" for="user-email"></label>
+          <input
+            class="callback-input"
+            type="email"
+            class="callback-input"
+            id="user-email"
+            placeholder="Enter email*"
+            required
+          />
+          <button class="callback-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
+
     </main>
 
     <footer class="footer">
