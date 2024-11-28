@@ -1,3 +1,65 @@
 .cases { 
-  background-color: burlywood;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.cases-container { 
+  margin-top: 50px;
+  margin-bottom: 48px;
+  margin-left: 28px;
+  margin-right: 28px;
+  width: 100%;
+}
+
+.cases-text { 
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32.95px;
+  margin-bottom: 15px;
+}
+
+.cases-title { 
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 48px;
+  margin-bottom: 34px;
+}
+
+.cases-lorem { 
+  margin-bottom: 39px;
+}
+
+.cases-list { 
+  list-style: none;
+  margin: 39px 28px;
+  margin-bottom: 47px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cases-item { 
+  width: calc((100% - 3 * 8px) / 4);
+}
+
+@media screen and (max-width: 768px) { 
+  .cases-list { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cases-item { 
+    width: 100%;
+    height: auto;
+  }
+
+  .cases-picture { 
+    width: 100%;
+    height: auto;
+  }
 }
