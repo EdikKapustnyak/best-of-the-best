@@ -1,32 +1,53 @@
 <section class="callback">
-  
-    <div class="callback-wrapper">
-      <div class="callback-img">
-        <img src="../img/callback/callback@1x-desktop.jpg" alt="desktop">
-      </div>
-      <div class="callback-request">
-        <p class="callback-text">Request Callback</p>
-        <form class="callback-form">
-          <label class="callback-label" for="user-name"></label>
-          <input
-            class="callback-input"
-            type="text"
-            id="user-name"
-            placeholder="Enter your name"
-            required
-          />
-          <label class="callback-label" for="user-email"></label>
-          <input
-            class="callback-input"
-            type="email"
-            class="callback-input"
-            id="user-email"
-            placeholder="Enter email*"
-            required
-          />
-          <button class="callback-button" type="submit">Send</button>
-        </form>
-      </div>
+  <div class="callback-wrapper">
+    <div class="callback-picture">
+      <!-- <picture>
+        <source
+          media="(min-width: 320px)"
+          srcset="../img/callback/callback@1x-phone.jpg"
+          width=""
+          height=""
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="../img/callback/callback@1x-laptop.jpg"
+        />
+        <source
+          media="(min-width: 1360px)"
+          srcset="../img/callback/callback@1x-desktop.jpg"
+        />
+        <img
+          class="callback-img"
+          srcset="
+            ../img/callback/callback@1x-desktop.jpg 1x,
+            ../img/callback/callback@1x-desktop.jpg 2x
+          "
+          alt="callback"
+        />
+      </picture> -->
     </div>
- 
+    <div class="callback-request">
+      <p class="callback-text">Request Callback</p>
+      <form class="callback-form">
+        <label class="callback-label" for="user-name"></label>
+        <input
+          class="callback-input"
+          type="text"
+          id="user-name"
+          placeholder="Enter your name"
+          required
+        />
+        <label class="callback-label" for="user-email"></label>
+        <input
+          class="callback-input"
+          type="email"
+          class="callback-input"
+          id="user-email"
+          placeholder="Enter email*"
+          required
+        />
+        <button class="callback-button" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
 </section>
