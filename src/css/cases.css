@@ -1,4 +1,4 @@
-.cases { 
+.cases {
   margin: 0;
   padding: 0;
   display: flex;
@@ -6,60 +6,90 @@
   text-align: center;
 }
 
-.cases-container { 
-  margin-top: 50px;
-  margin-bottom: 48px;
-  margin-left: 28px;
-  margin-right: 28px;
+.cases-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cases-text { 
+.cases-text {
   font-weight: 400;
   font-size: 20px;
   line-height: 32.95px;
   margin-bottom: 15px;
+  margin-top: 50px;
 }
 
-.cases-title { 
+.cases-title {
   font-weight: 300;
   font-size: 38px;
   line-height: 48px;
   margin-bottom: 34px;
+  text-align: center;
 }
 
-.cases-lorem { 
+.cases-lorem {
   margin-bottom: 39px;
+  text-align: center;
 }
 
-.cases-list { 
+.cases-list {
   list-style: none;
-  margin: 39px 28px;
   margin-bottom: 47px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  justify-content: center;
 }
 
-.cases-item { 
+.cases-item {
   width: calc((100% - 3 * 8px) / 4);
+  transition: width 0.3s ease;
 }
 
-@media screen and (max-width: 768px) { 
-  .cases-list { 
+.cases-picture {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .cases-item {
+    width: 100%;
+  }
+
+  .cases-picture {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cases-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .cases-list {
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+  }
+
+  .cases-item {
     width: 100%;
   }
 
-  .cases-item { 
-    width: 100%;
-    height: auto;
-  }
-
-  .cases-picture { 
-    width: 100%;
-    height: auto;
+  .cases-title,
+  .cases-lorem,
+  .cases-text {
+    text-align: center;
   }
 }
