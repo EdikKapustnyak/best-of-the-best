@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   gap: 25px;
+  margin-bottom: 8px;
 }
 
 .footer-link {
@@ -25,5 +26,8 @@
 @media screen and (min-width: 768px) {
   .footer {
     padding-bottom: 16px;
+  }
+  .footer-list {
+    margin-bottom: 10px;
   }
 }
