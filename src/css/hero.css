@@ -5,7 +5,7 @@
     to bottom,
      rgba(0, 0, 0, 0.4),
      rgba(0, 0, 0, 0.4)
-  ), url("../img/header-hero/hero-bg-1x.jpg");
+  ), url("../img/header-hero/bg-mob-1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 144px;
@@ -14,11 +14,15 @@
   margin: 0 auto;
   position: relative;
   max-width: 320px; 
+ 
 }
+
 
   .hero-container {
     margin: 0 auto;
     text-align: center;
+    padding-left: 37px;
+    padding-right: 37px;
   
   }
 
@@ -78,13 +82,19 @@
        rgba(0, 0, 0, 0.4),
        rgba(0, 0, 0, 0.4)
     ),
-    url("../img/header-hero/hero-bg-2x.jpg");
+    url("../img/header-hero/bg-mob-2x.jpg");
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero {
-
+    
+      background-color: #fff;
+      background-image: linear-gradient(
+        to bottom,
+         rgba(0, 0, 0, 0.4),
+         rgba(0, 0, 0, 0.4)
+      ), url("../img/header-hero/bg-tablet-1x.jpg");
     padding-top: 407px;
     padding-bottom: 412px;
     max-width: 768px; }
@@ -93,6 +103,12 @@
   .hero-title {
   font-size: 55px;
   margin-bottom: 25px;
+  }
+
+  .hero-container {
+    padding-left: 135px;
+    padding-right: 140px;
+  
   }
 
   .hero-second-title {
@@ -115,7 +131,7 @@
        rgba(0, 0, 0, 0.4),
        rgba(0, 0, 0, 0.4)
     ),
-    url("../img/header-hero/hero-bg-2x.jpg");
+    url("../img/header-hero/bg-tablet-2x.jpg");
   }
 }
   
@@ -125,8 +141,13 @@
 
 @media only screen and (min-width: 1360px) {
   .hero {
-  background-color: #fff;
-  background-image: url("../img/header-hero/hero-bg-1x.jpg");
+
+
+      background-image: linear-gradient(
+        to bottom,
+         rgba(0, 0, 0, 0.4),
+         rgba(0, 0, 0, 0.4)
+      ), url("../img/header-hero/hero-bg-1x.jpg");
   
   background-repeat: no-repeat;
   background-size: cover;
@@ -152,6 +173,10 @@ margin-bottom: 25px;
 .hero-container {
   margin: 0 auto;
   text-align: center;
+  padding-left: 431px;
+  padding-right: 436px;
+  max-width: 1360px;
+
 
 }
 
@@ -187,6 +212,7 @@ border-style: none;
 .hero-btn-icon {
   margin-right: 5px;
 } 
+
 @media screen and (min-resolution: 2dppx), 
 (min-resolution: 192dpi), 
 (min-device-pixel-ratio: 2) {
